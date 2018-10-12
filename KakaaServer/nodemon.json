@@ -1,0 +1,6 @@
+{
+    "env": {
+        "JWT_KEY": "jesusthesameyesterdaytodayandforever",
+        "mongoUri": "mongodb://localhost/kakaadb"
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/meter"
+        android:title="Meter"
+        android:icon="@drawable/electric_meter1"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/logs"
+        android:title="Logs"
+        android:icon="@drawable/logs"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/clear_energy"
+        android:title="Clear Energy Records"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never"/>
+
+</menu>

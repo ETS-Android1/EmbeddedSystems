@@ -1,0 +1,29 @@
+{
+  "name": "kakaaserver",
+  "version": "1.0.0",
+  "description": "Final Year Project for Geraldine Nwabude",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "final",
+    "electronics",
+    "iot",
+    "detection",
+    "circuit",
+    "arduino",
+    "microcontroller",
+    "pir"
+  ],
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.1.1"
+  },
+  "author": "Chris Eze",
+  "license": "MIT"
+}

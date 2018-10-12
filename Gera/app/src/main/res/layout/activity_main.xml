@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.chriseze.gera.MainActivity">
+    <include layout="@layout/appbar" android:id="@+id/custom_toolbar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/custom_toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/linear"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp">
+
+                <RelativeLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/indicator_circle2"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/relative1">
+
+                    <RelativeLayout
+                        android:layout_width="152dp"
+                        android:layout_height="152dp"
+                        android:background="@drawable/indicator_circle1"
+                        android:layout_centerInParent="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Outlet"
+                                android:textColor="@color/gray"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:textStyle="bold"
+                                android:id="@+id/outlet1"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/gray"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/indicator1"
+                            android:src="@drawable/idea"
+                            android:layout_centerInParent="true"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ON"
+                            android:textStyle="bold"
+                            android:textColor="@color/gray"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/status1"
+                            android:layout_below="@id/indicator1"/>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:background="@drawable/indicator_circle2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/relative2"
+                    android:layout_below="@id/custom_toolbar">
+
+                    <RelativeLayout
+                        android:layout_width="152dp"
+                        android:layout_height="152dp"
+                        android:background="@drawable/indicator_circle1"
+                        android:layout_centerInParent="true">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Outlet"
+                                android:textColor="@color/gray"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="2"
+                                android:textStyle="bold"
+                                android:id="@+id/outlet2"
+                                android:layout_marginLeft="5dp"
+                                android:textColor="@color/gray"/>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/indicator2"
+                            android:src="@drawable/idea"
+                            android:layout_centerInParent="true"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ON"
+                            android:textStyle="bold"
+                            android:textColor="@color/gray"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/status2"
+                            android:layout_below="@id/indicator2"/>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Control Outlets"
+                android:textColor="@color/dark_blue"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/linear"
+                android:layout_marginTop="50dp"
+                android:id="@+id/control_outlet"
+                android:layout_centerHorizontal="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/control_outlet"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Outlet 1"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:id="@+id/control_outlet1"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/on1"
+                            android:text="ON"
+                            android:textColor="@color/dark_green"
+                            android:textSize="12sp"/>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/off1"
+                            android:text="OFF"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="20dp"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Outlet 2"
+                        android:textColor="@color/dark_blue"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:id="@+id/control_outlet2"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20dp">
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/on2"
+                            android:text="ON"
+                            android:textColor="@color/dark_green"
+                            android:textSize="12sp"/>
+
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/off2"
+                            android:text="OFF"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_marginLeft="20dp"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</RelativeLayout>

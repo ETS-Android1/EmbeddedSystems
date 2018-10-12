@@ -1,0 +1,31 @@
+{
+  "name": "spo",
+  "version": "1.0.0",
+  "description": "This is the server implementation for a Smart Power Outlet",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "electric",
+    "power",
+    "outlet",
+    "smart",
+    "socket",
+    "microcontroller",
+    "arduino",
+    "wemos",
+    "sensor",
+    "current"
+  ],
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.1.1",
+    "morgan": "^1.9.0"
+  },
+  "author": "Chris Eze",
+  "license": "MIT"
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".SetTime">
+
+    <include android:id="@+id/appbar" layout="@layout/appbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_below="@id/appbar"
+        android:layout_marginTop="60dp"
+        android:text="@string/set_timer"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/ed_timer1"
+        android:layout_below="@id/text"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/wel_btn2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:hint="@string/enter_time1"
+        android:textColorHint="@color/white"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/ed_timer2"
+        android:layout_below="@id/ed_timer1"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/wel_btn2"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:hint="@string/enter_time2"
+        android:textColorHint="@color/white"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:paddingLeft="5dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/set_time"
+        android:layout_below="@id/ed_timer2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/set_button"
+        android:text="SET"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

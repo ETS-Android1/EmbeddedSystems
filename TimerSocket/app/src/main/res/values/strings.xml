@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">TVCO</string>
+    <string name="logout">Logout</string>
+    <string name="t_control">Timer Control</string>
+    <string name="v_control">Voice Control</string>
+    <string name="b_control">Button Control</string>
+    <string name="tap">Tap</string>
+    <string name="outlet_1">Outlet 1</string>
+    <string name="outlet_2">Outlet 2</string>
+    <string name="set_timer">Set Timer (In Mins)</string>
+    <string name="enter_time1">Enter time (outlet 1)</string>
+    <string name="enter_time2">Enter time (outlet 2)</string>
+    <string name="title_activity_voice_control">VoiceControl</string>
+    <string name="nav_header_title">TVCO</string>
+    <string name="action_settings">Settings</string>
+</resources>

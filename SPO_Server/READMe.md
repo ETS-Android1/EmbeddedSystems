@@ -1,0 +1,1 @@
+API endpoints built with nodejs and mongodb to help control Smart Power Outlet

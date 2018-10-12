@@ -1,0 +1,6 @@
+{
+    "env": {
+        "mongoUri": "mongodb://localhost/spo",
+        "JWT_KEY": "jesusthesameyesterdaytodayandforever"
+    }
+}
